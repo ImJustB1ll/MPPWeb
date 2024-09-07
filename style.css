@@ -17,6 +17,7 @@ header{
     position: fixed;
     width: 100svw;
     margin: 0 auto;
+    z-index: 1;
 }
 
 nav{
@@ -56,8 +57,6 @@ li a:hover::after {
     opacity: 1;
 }
 
-/* Main */
-
 /* Hero */
 
 .hero {
@@ -68,12 +67,30 @@ li a:hover::after {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(220, 220,255,1) 3%, rgba(255,255,255,0) 25%);
+    z-index: -1;
 }
 
 .content {
     margin: auto;
-    text-align: center;
-    width: 50%;
+    margin-left: 4%;
+    padding-top: 5%;
+    text-align: start;
+    width: 40%;
+}
+
+.content p {
+    padding: 2%;
     background-color: rgba(128, 245, 235, 0.143);
     backdrop-filter: blur(8px);
     border-radius: 2rem;
@@ -82,7 +99,7 @@ li a:hover::after {
     box-shadow: 3px 3px 3px rgba(0,0,0,0.089);
 }
 
-.content h2 {
+h2 {
     font-size: 8rem;
     color: rgb(255, 60, 0);
 }
@@ -94,6 +111,7 @@ li a:hover::after {
 
 .btn {
     margin: 2rem;
+    margin-left: 0;
     font-size: 2rem;
     padding: 1rem 4rem;
     border: none;
@@ -102,7 +120,8 @@ li a:hover::after {
     position: relative;
     z-index: 0;
     border-radius: 14px;
-    background-color: darkslategray;
+    background-color: rgb(0, 87, 148);
+    font-style: italic;
 }
 
 .btn::after {
@@ -120,5 +139,20 @@ li a:hover::after {
 
 .btn:hover::after {
     opacity: 1 ;
-    transition: all 200ms;
+    transition: ease-in-out 200ms;
+}
+
+
+/* Products */
+
+.products {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.products h1{
+    color: black;
+    margin: auto;
 }
