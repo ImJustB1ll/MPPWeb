@@ -1,3 +1,5 @@
+// Hero Read More Button
+
 let description_box = document.querySelectorAll(".description_box");
 
 description_box.forEach(element => {
