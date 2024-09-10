@@ -225,6 +225,7 @@ h2 {
     background-color: lightgreen;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .carousel_track {
@@ -254,10 +255,12 @@ h2 {
 
 .carousel_button--left {
     left: -6vw;
+    z-index: 1;
 }
 
 .carousel_button--right {
     right: -6vw;
+    z-index: 1;
 }
 
 .carousel_button img {
@@ -277,6 +280,7 @@ h2 {
     height: 15px;
     background: rgba(0, 0, 0, 0.3);
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .carousel_indicator.current-slide {
