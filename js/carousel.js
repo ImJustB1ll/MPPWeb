@@ -54,6 +54,7 @@ let slideInterval;
 
 const startSlideInterval = () => {
     if (!isAutomatic) return; // don't start the timer if manual mode is active
+    if (slideInterval) clearInterval(slideInterval); // <--- Add this line
     slideInterval = setInterval(() => {
         const currentSlide = track.querySelector('.current-slide');
         const currentIndex = slides.findIndex(slide => slide === currentSlide);
