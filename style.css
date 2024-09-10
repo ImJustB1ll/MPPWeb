@@ -198,21 +198,22 @@ h2 {
 
 .products {
     min-height: 100dvh;
-    align-items: center;
     z-index: 1;
 }
 
-.products h1{
+.products h2{
     color: black;
-    margin: auto;
-    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
 }
 
 .carousel {
     position: relative;
     height: 600px;
     width: 80%;
-    margin: 0 auto;
+    margin: 5% auto;
 }
 
 .carousel_image {
@@ -242,29 +243,6 @@ h2 {
     top: 0;
     bottom: 0;
     width: 100%;
-}
-
-.carousel_button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-}
-
-.carousel_button--left {
-    left: -6vw;
-    z-index: 1;
-}
-
-.carousel_button--right {
-    right: -6vw;
-    z-index: 1;
-}
-
-.carousel_button img {
-    width: 100px;
 }
 
 .carousel_nav {
