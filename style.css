@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgba(220, 220,255,1);
+    background-color: rgb(188, 102, 86);
 }
 
 a {
@@ -88,68 +88,12 @@ li a:hover::after {
 
 .content {
     margin: auto;
-    margin-left: 4%;
-    padding-top: 5%;
-    text-align: start;
-    width: 40%;
+    text-align: center;
 }
 
-.description_box {
-    padding: fit-content;
-    background-color: rgba(128, 245, 235, 0.051);
-    backdrop-filter: blur(8px);
-    border-radius: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.089);
-    height: 24vh;
-    overflow: hidden;
-    position: relative;
-}
-
-.active {
-    height: auto;
-}
-
-.description_box button {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    border: none;
-    font-size: clamp(12px, 2vw, 24px);
-    color: rgb(0, 157, 255);
-    font-weight: bold;
-    background-color: transparent;
-    padding: 2vh 0;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.description_box button::after {
-    position: absolute;
-    content: '';
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(220, 220, 255, 0.5), rgb(220,220,250, 0.8), rgb(220, 220, 250));
-    z-index: -1;
-}
-
-.description_box p {
-    margin: 2%;
-}
-
-h2 {
+.content h1 {
     font-size: clamp(38px, 8vw, 100px);
     color: rgb(255, 60, 0);
-}
-
-.description_box p {
-    font-size: clamp(14px, 4vw, 36px);
-    color: rgb(198, 48, 2);
-    padding: 1.5%;
 }
 
 .btn {
@@ -201,12 +145,17 @@ h2 {
     z-index: 1;
 }
 
-.products h2{
+.products h1{
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
+    margin-bottom: 4%;
+    font-size: clamp(38px, 8vw, 100px);
+}
+
+.product-header > img{
+    width: 100%;
 }
 
 .carousel {
