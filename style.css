@@ -239,12 +239,11 @@ li a:hover::after {
     font-size: 24px;
 }
 
-/* Reviews */
-.reviews {
-    min-height: 100dvh;
-    width: 50%;
-    margin: auto;
+/* Reviews Header */
+.reviews-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
+
+/* Testimonials */
