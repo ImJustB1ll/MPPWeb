@@ -150,7 +150,6 @@ li a:hover::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4%;
     font-size: clamp(38px, 8vw, 100px);
 }
 
@@ -161,8 +160,8 @@ li a:hover::after {
 .carousel {
     position: relative;
     height: 500px;
-    width: 60%;
-    margin: 5% auto;
+    width: 50%;
+    margin: 3% auto;
 }
 
 .carousel_image {
@@ -172,7 +171,6 @@ li a:hover::after {
 }
 
 .carousel_track-container {
-    background-color: lightgreen;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -212,4 +210,41 @@ li a:hover::after {
 
 .carousel_indicator.current-slide {
     background: rgba(0, 0, 0, 0.7);
+}
+
+.products-info {
+    margin: 2% auto;
+    background-color: aqua;
+    border-radius: 16px;
+    padding: 8px;
+    width: 50%;
+}
+
+.products-info > h3 {
+    font-size: clamp(19px, 8vw, 50px);;
+}
+
+.products-info_description {
+    display: flex;
+    align-items: center;
+}
+
+.products-info_description > img {
+    width: 20rem;
+    border: 2px solid ;
+    border-radius: 4%;
+}
+
+.products-info_description > p {
+    font-size: 24px;
+}
+
+/* Reviews */
+.reviews {
+    min-height: 100dvh;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
