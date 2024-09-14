@@ -64,7 +64,7 @@ li a:hover::after {
 
 /* Hero */
 
-.hero {
+#hero {
     min-height: 100dvh;
     display: flex;
     align-items: center;
@@ -76,7 +76,7 @@ li a:hover::after {
     z-index: 0;
 }
 
-.hero::after {
+#hero::after {
     content: '';
     display: block;
     position: absolute;
@@ -140,12 +140,12 @@ li a:hover::after {
 
 /* Products */
 
-.products {
+#products {
     min-height: 100dvh;
     z-index: 1;
 }
 
-.products h1{
+#products h1{
     color: black;
     display: flex;
     align-items: center;
@@ -239,11 +239,131 @@ li a:hover::after {
     font-size: 24px;
 }
 
-/* Reviews Header */
-.reviews-header {
+/* Testimonials */
+#testimonials {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
-/* Testimonials */
+.testimonial-heading {
+    letter-spacing: 1px;
+    margin: 30px 0;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-heading h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 10px 20px;
+}
+
+.testimonial-heading h3 {
+    font-size: 1.3rem;
+    color: rgb(20, 20, 20);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.testimonial-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.testimonial-box {
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgb(188, 102, 86);
+    padding: 20px;
+    margin: 15px;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.name-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user strong {
+    color: rgb(242, 142, 142);
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.name-user a {
+    color: gainsboro;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.reviews i {
+    color: yellow;
+}
+
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client-comment p {
+    font-size: 0.9rem;
+    color: rgb(243, 235, 235);
+}
+
+/* Product Location */
+#location {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.product-location-description {
+    max-width: 600px;
+}
+
+.product-location-description h2 {
+    font-size: 5rem;
+}
+
+.product-location-description p {
+    font-size: 1.2rem;
+}
+
+.product-location-description iframe {
+    border-radius: 25%;
+}
