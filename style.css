@@ -163,7 +163,7 @@ h1 a:hover::after, li a:hover::after {
 }
 
 /* Transition Between Hero and Products */
-.custom-shape-divider-top-1726441994 {
+.transisi {
     position: absolute;
     top: 0;
     left: 0;
@@ -172,14 +172,14 @@ h1 a:hover::after, li a:hover::after {
     line-height: 0;
 }
 
-.custom-shape-divider-top-1726441994 svg {
+.transisi svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 240px;
 }
 
-.custom-shape-divider-top-1726441994 .shape-fill {
+.transisi .shape-fill {
     fill: #FFDECD;
 }
 
@@ -189,6 +189,7 @@ h1 a:hover::after, li a:hover::after {
     min-height: 100dvh;
     z-index: 1;
     position: relative;
+    padding-bottom: 10rem;
 }
 
 #products h1{
@@ -261,6 +262,7 @@ h1 a:hover::after, li a:hover::after {
 
 .products-info {
     margin: 8rem auto;
+    margin-bottom: 0;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
     background-color: rgb(188, 102, 86);
     border-radius: 16px;
@@ -295,6 +297,28 @@ h1 a:hover::after, li a:hover::after {
     padding: 0.9rem 0;
 }
 
+/* Transition Product to Testimonial */
+.transisi-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.transisi-1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.transisi-1 .shape-fill {
+    fill: #d88053;
+}
+
 /* Testimonials */
 #testimonials {
     display: flex;
@@ -306,6 +330,7 @@ h1 a:hover::after, li a:hover::after {
     padding: 8rem 0;
     padding-top: 4rem;
     background-color: #d88053;
+    position: relative;
 }
 
 .testimonial-heading {
@@ -404,15 +429,43 @@ h1 a:hover::after, li a:hover::after {
     color: rgb(243, 235, 235);
 }
 
+/* Transition to Location */
+.transisi-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.transisi-2 svg {
+    position: relative;
+    display: block;
+    width: calc(152% + 1.3px);
+    height: 101px;
+}
+
+.transisi-2 .shape-fill {
+    fill: #d88053;
+}
+
 /* Product Location */
 #location {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     gap: 5rem;
     background-color: rgb(18, 18, 18);
     padding: 8rem 4rem;
+    position: relative;
 }
+
+.location-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
 
 .product-location-description {
     max-width: 600px;
@@ -422,6 +475,52 @@ h1 a:hover::after, li a:hover::after {
     font-size: 5rem;
 }
 
+.product-location-description span {
+    color: rgb(255, 132, 0);
+    font-size: 1.4rem;
+}
+
 .product-location-description p {
     font-size: 1.2rem;
+}
+
+.transisi-3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.transisi-3 svg {
+    position: relative;
+    display: block;
+    width: calc(152% + 1.3px);
+    height: 101px;
+}
+
+.transisi-3 .shape-fill {
+    fill: rgb(42, 42, 42);
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2rem 0;
+    background-color: rgb(42, 42, 42);
+}
+
+#footer img, #footer a {
+    width: 100px;
+    filter: grayscale(60%);
+}
+
+#footer img:hover, #footer a:hover {
+    filter: grayscale(0);
+    animation: ease-in-out;
 }
